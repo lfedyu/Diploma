@@ -1,0 +1,134 @@
+<resources>
+    <string name="app_name">Lviv Trip</string>
+    <string name="txt1">Ви вже маєте акаунт?</string>
+    <string name="action_regestration">Реєстрація</string>
+    <string name="action_exit">Вихід</string>
+    <string name="action_aboutus">Про нас</string>
+    <string name="title_activity_two">Мої подорожі</string>
+    <string name="txt_for_button">Створити подорож</string>
+    <string name="motto">Ми допоможемо зробити вашу подорож до Львова незабутньою!</string>
+
+    <string name="navigation_drawer_open">Відкрити навігаційне меню</string>
+    <string name="navigation_drawer_close">Закрити навігаційне меню</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Вхід</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">E-mail</string>
+    <string name="prompt_name">Ім\'я</string>
+    <string name="prompt_password">Пароль</string>
+    <!-- Strings related to registration -->
+    <string name="prompt_password_repeat">Введіть пароль ще раз</string>
+    <string name="action_sign_in">Вхід</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">Ця e-mail адреса є не дійсною</string>
+    <string name="error_invalid_password">Цей пароль є занадто коротким</string>
+    <string name="error_invalid_password_repeat">Паролі повинні бути однаковими</string>
+    <string name="error_incorrect_password">Цей пароль є не вірним</string>
+    <string name="error_empty_repeat_password">Введіть пароль ще раз</string>
+    <string name="error_field_required">Це поле є обов\'язковим </string>
+    <string name="permission_rationale">"Наддання контактів є необхідним для забезпечення  завершеності
+        email."
+    </string>
+    <string name="title_activity_registratoin">Реєстрація</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_planed_routs">Поки що немає маршрутів, щоб відоображати тут. Хочете спланувати маршрут?</string>
+    <string name="menu_add">Додати</string>
+    <string name="title_activity_settings">Налаштування</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="trip_name">Назва подорожі</string>
+    <string name="start_date">Початкова дата</string>
+    <string name="end_date">Кінцева дата</string>
+    <string name="in_which_hotel">В якому готелі ви зупинитесь?</string>
+    <string name="press_continue">Продовжити</string>
+    <string name="lengthOfTripInfo">Ви можете визначити довжину вашої подорожі пізніше, додаючи дні під час створення маршруту</string>
+    <string name="title_new_trip">Нова подорож</string>
+    <string name="title_places">Місця</string>
+    <string name="menu_categories">Категорії</string>
+    <string name="categ_seghtseeing">Пам\'ятки</string>
+    <string name="categ_hotels">Готелі</string>
+    <string name="categ_museums">Музеї</string>
+    <string name="categ_lightlife">Нічне життя</string>
+    <string name="categ_restaurants">Ресторани</string>
+    <string name="title_activity_maps2">Map</string>
+    <string name="category_outdoors">Просто неба</string>
+    <string name="route">Маршрут</string>
+    <string name="menu_search">Пошук</string>
+    <string name="search_hint">Введіть назву</string>
+    <string name="my_route">Мій маршрут</string>
+    <string name="route_map">Маршрут на карті</string>
+</resources>

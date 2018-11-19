@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/category_sightseeing"
+        android:orderInCategory="100"
+        android:title="@string/categ_seghtseeing"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/category_hotels"
+        android:orderInCategory="100"
+        android:title="@string/categ_hotels"
+         />
+
+    <item
+        android:id="@+id/category_museums"
+        android:orderInCategory="100"
+        android:title="@string/categ_museums"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/category_hightlife"
+        android:orderInCategory="100"
+        android:title="@string/categ_lightlife"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/category_restaurants"
+        android:orderInCategory="100"
+        android:title="@string/categ_restaurants"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/category_outdoors"
+        android:orderInCategory="100"
+        android:title="@string/category_outdoors"
+        app:showAsAction="never"/>
+
+</menu>
