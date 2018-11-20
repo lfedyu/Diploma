@@ -10,9 +10,9 @@ import java.util.HashSet;
 
 public class Solver {
 
-    float[][] distances; //масив відстаней між містами
-    float best_cost;
-    int[] best_path;
+    private float[][] distances; //масив відстаней між містами
+    private float best_cost;
+    private int[] best_path;
     private static final String TAG = "myLogs";
     /**
      * Constructs a new Solver and initializes distances array
@@ -34,7 +34,7 @@ public class Solver {
      * @return An array with the locations of the best path
      */
     public int[] calculate() { // створюється множина Integer розміром places.size() тобто кількість міст в списку
-        HashSet<Integer> location_set = new HashSet<Integer>(distances.length);
+        HashSet<Integer> location_set = new HashSet<>(distances.length);
         for(int i = 0; i < distances.length; i++){
             location_set.add(i); // множині присвоюються номери від 0 до кількість міст-1
             //System.out.println(i);
