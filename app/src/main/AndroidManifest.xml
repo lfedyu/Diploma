@@ -8,6 +8,12 @@
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
 
+    <!--permissions for google maps -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -46,7 +52,7 @@
             android:name=".ListOfPlaces_Activity"
             android:label="Місця" />
         <activity android:name=".MapsActivity"
-            android:label="@string/my_route"></activity>
+            android:label="@string/my_route"/>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -57,13 +63,18 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
+            android:value="@string/google_maps_key"/>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
 
         <activity android:name=".CardViewActivity" />
         <activity android:name=".Place_Activity" />
         <activity android:name=".RouteActivity"
-            android:label="@string/my_route"></activity>
-
+            android:label="@string/my_route"/>
+        <activity android:name=".GoogleMapsActivity"
+            android:label="@string/my_route"/>
     </application>
 
 </manifest>
