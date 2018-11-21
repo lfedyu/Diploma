@@ -1,16 +1,21 @@
 package com.fedyushko.lilia.p0031_firstprogect;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.fedyushko.lilia.p0031_firstprogect.view.DivideView;
 import com.fedyushko.lilia.p0031_firstprogect.view.PlaceInfoView;
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GoogleApiAvailability;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +23,8 @@ import java.util.List;
 public class RouteActivity extends AppCompatActivity {
 
     //private MainActivity mainActivity;
+    private static final String TAG = "RouteActivity";
+    private static final int ERROR_DIALOG_REQUEST = 9001;
     LinearLayout llMail;
     Toolbar toolbar;
     ImageView imageView;
@@ -40,7 +47,7 @@ public class RouteActivity extends AppCompatActivity {
         route =  getIntent().getParcelableArrayListExtra("route");
 
         //if there is right version of Google Play Services Map will be shown
-        if(new MainActivity().isServicesOK()) {
+        if(isServicesOK()) {
             findViewById(R.id.id_map).setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -69,6 +76,27 @@ public class RouteActivity extends AppCompatActivity {
     }
 
 
+    //google services checker
+    public boolean isServicesOK(){
+        Log.d(TAG, "isServicesOK: checking google services version");
+        int available = GoogleApiAvailability.getInstance().isGooglePlayServicesAvailable(RouteActivity.this);
 
+        if (available == ConnectionResult.SUCCESS){
+            //everything is fine and user can make request
+            Log.d(TAG, "isServicesOK: Google Play Services is working");
+            return true;
+        }
+        else if (GoogleApiAvailability.getInstance().isUserResolvableError(available)){
+            //the error has occured but we can resolve it (wrong version)
+            Log.d(TAG, "isServicesOK: the error has occured but we can resolve it(wrong version)");
+            Dialog dialog = GoogleApiAvailability.getInstance().getErrorDialog(RouteActivity.this, available, ERROR_DIALOG_REQUEST);
+            dialog.show();
+        }
+        else {
+            //there is a problem and we can't fix it
+            Toast.makeText(this, "You can't make map request", Toast.LENGTH_SHORT).show();
+        }
+        return false;
+    }
 
 }
